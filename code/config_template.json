@@ -1,0 +1,73 @@
+{
+  "_note": "Structure of the PRIVATE configuration required by ethsim_generic.configure(). Values are withheld at the client's instruction; this repository cannot reproduce the results without them.",
+  "symbol": "ETHUSDT",
+  "start_utc_inclusive": "2021-01-01T00:00:00Z",
+  "end_utc_exclusive": "2026-08-25T00:00:00Z",
+  "candidate": {
+    "name": null,
+    "entry_cum_cov": [
+      "<private>"
+    ],
+    "allocation": [
+      "<private>"
+    ],
+    "u": null,
+    "hypothesis": null,
+    "generator": {
+      "n": null,
+      "coverage": null,
+      "gap_power": null,
+      "head_flat_rounds": null,
+      "alloc_ratio": null,
+      "accel": null,
+      "front_boost": null,
+      "u_fixed": null
+    }
+  },
+  "configuration": {
+    "initial_wallet": null,
+    "leverage": null,
+    "tp_margin_roi": null,
+    "tp_price_return": null,
+    "reset_threshold": null,
+    "reset_enabled": null,
+    "initial_market_fee": null,
+    "later_limit_fee": null,
+    "tp_limit_fee": null,
+    "initial_slippage_bps": null,
+    "later_slippage_bps": null,
+    "maintenance_margin_rate": null,
+    "price_tick": null,
+    "quantity_step": null,
+    "min_quantity": null,
+    "min_notional": null,
+    "min_limit_price_ratio": null,
+    "max_open_orders": null
+  },
+  "scenarios": [
+    {
+      "id": "baseline",
+      "funding_positive_multiplier": "<private>",
+      "funding_negative_multiplier": "<private>",
+      "tp_slippage_bps": "<private>"
+    },
+    {
+      "id": "funding",
+      "funding_positive_multiplier": "<private>",
+      "funding_negative_multiplier": "<private>",
+      "tp_slippage_bps": "<private>"
+    },
+    {
+      "id": "slip1",
+      "funding_positive_multiplier": "<private>",
+      "funding_negative_multiplier": "<private>",
+      "tp_slippage_bps": "<private>"
+    },
+    {
+      "id": "slip2",
+      "funding_positive_multiplier": "<private>",
+      "funding_negative_multiplier": "<private>",
+      "tp_slippage_bps": "<private>"
+    }
+  ]
+}
