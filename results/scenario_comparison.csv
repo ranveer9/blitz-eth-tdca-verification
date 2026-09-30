@@ -59,9 +59,9 @@ funding,cycles_started,45155,45155,MATCH
 funding,cycles_completed_tp,45154,45154,MATCH
 funding,reset_count,27,27,MATCH
 funding,fees_total,359114.91718501615,359114.91718501615,MATCH
-funding,funding_paid_signed,26852.606989832053,26859.89579020009,EXPLAINED (funding data)
+funding,funding_paid_signed,26852.606989832053,26859.89579020009,EXPLAINED (final minute: funding)
 funding,slippage_cost,26154.82269999829,26154.82269999829,MATCH
-funding,final_wallet,1869120.1256251242,1869112.836824756,EXPLAINED (funding data)
+funding,final_wallet,1869120.1256251242,1869112.836824756,EXPLAINED (final minute: funding)
 funding,max_step,11,11,MATCH
 funding,max_hold_days,46.579622962962965,46.579622962962965,MATCH
 funding,hold_cycles,45155,45155,MATCH
@@ -107,9 +107,9 @@ slip1,cycles_started,44987,44987,MATCH
 slip1,cycles_completed_tp,44986,44986,MATCH
 slip1,reset_count,26,26,MATCH
 slip1,fees_total,329238.85819737223,329238.85819737223,MATCH
-slip1,funding_paid_signed,25283.08215859193,25289.743171214526,EXPLAINED (funding data)
+slip1,funding_paid_signed,25283.08215859193,25289.743171214526,EXPLAINED (final minute: funding)
 slip1,slippage_cost,90420.4173000037,90420.4173000037,MATCH
-slip1,final_wallet,1658258.8818440388,1658252.2208314163,EXPLAINED (funding data)
+slip1,final_wallet,1658258.8818440388,1658252.2208314163,EXPLAINED (final minute: funding)
 slip1,max_step,11,11,MATCH
 slip1,max_hold_days,46.56009924768519,46.56009924768519,MATCH
 slip1,hold_cycles,44987,44987,MATCH
@@ -155,9 +155,9 @@ slip2,cycles_started,45024,45024,MATCH
 slip2,cycles_completed_tp,45023,45023,MATCH
 slip2,reset_count,25,25,MATCH
 slip2,fees_total,306832.62783878297,306832.62783878297,MATCH
-slip2,funding_paid_signed,24294.16185580316,24305.067359837034,EXPLAINED (funding data)
+slip2,funding_paid_signed,24294.16185580316,24305.067359837034,EXPLAINED (final minute: funding)
 slip2,slippage_cost,144978.41490000146,144978.41490000146,MATCH
-slip2,final_wallet,1493446.9496054118,1493436.044101378,EXPLAINED (funding data)
+slip2,final_wallet,1493446.9496054118,1493436.044101378,EXPLAINED (final minute: funding)
 slip2,max_step,11,11,MATCH
 slip2,max_hold_days,46.560095625,46.560095625,MATCH
 slip2,hold_cycles,45024,45024,MATCH

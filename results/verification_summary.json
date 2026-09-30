@@ -1,5 +1,5 @@
 {
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "terminal_values_2359_full_precision": {
     "baseline": {
       "exit_net_terminal_equity_usd": 1946324.4087075205,
@@ -70,8 +70,27 @@
       "published_open_hold_days": 0.3577766087962963
     }
   },
+  "funding_residual_evidence": {
+    "backfill_years": [
+      2021,
+      2022,
+      2023
+    ],
+    "events_2026": 708,
+    "api_2026": 708,
+    "events_during_final_hold": [
+      "2026-08-24 16:00 UTC (API)"
+    ],
+    "boundary_settlement_in_file": false,
+    "ratios": {
+      "funding": 0.22412668764872312,
+      "slip1": 0.22412668764443403,
+      "slip2": 0.22412668764596516
+    },
+    "ratio_constant": true
+  },
   "repo": "https://github.com/ranveer9/blitz-eth-tdca-verification",
-  "generated_utc": "2026-09-30 10:55 UTC",
+  "generated_utc": "2026-09-30 14:52 UTC",
   "trade_count": {
     "independent": 2963456806,
     "reference": 2963456806
