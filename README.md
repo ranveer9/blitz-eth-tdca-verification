@@ -1,6 +1,6 @@
 # Independent Verification: Blitz T-DCA ETHUSDT Perpetual Backtest
 
-**Author:** Ranveer Verma ([github.com/ranveer9](https://github.com/ranveer9)) · **Version:** v1.0.0
+**Author:** Ranveer Verma ([github.com/ranveer9](https://github.com/ranveer9)) · **Version:** v1.0.1
 **Commissioned by:** Blitz Trading. The work was commissioned and paid for; the method, results and conclusions are the author's own, including all limitations and negative findings.
 
 This is a historical verification of a backtest. It is not a guarantee of live trading performance.
@@ -10,7 +10,7 @@ This is a historical verification of a backtest. It is not a guarantee of live t
 ## Scope
 Binance ETHUSDT USD-M perpetual, long-only T-DCA, one published preset, four cost scenarios; 2021-01-01 00:00 UTC to 2026-08-25 00:00 UTC (exclusive); 2,062 checksum-verified daily aggTrades archives, 2,963,456,806 trades (identical to the reference count). The sealed period from 2026-08-25 was not used.
 
-## Phase A: reproduction (reproduced bit-for-bit, two explained residuals)
+## Phase A: reproduction (reproduced bit-for-bit; both residuals traced to one boundary minute)
 
 | Scenario | Realised wallet (USD) | Exit-net equity, this report | Published exit-net | TP cycles | Max drawdown | Fields |
 |---|---|---|---|---|---|---|
@@ -19,9 +19,11 @@ Binance ETHUSDT USD-M perpetual, long-only T-DCA, one published preset, four cos
 | Funding + 1 bp TP slip | 1,658,258.88 | 1,657,453.25 | 1,657,416.87 | 44,986 | 35.5039% | 42 exact, 6 explained, 0 unexplained |
 | Funding + 2 bp TP slip | 1,493,446.95 | 1,493,125.13 | 1,493,065.57 | 45,023 | 34.9238% | 42 exact, 6 explained, 0 unexplained |
 
-Every cycle count, reset, fee, slippage, drawdown, liquidation-room, MAE, utilisation, ladder-depth and completed-cycle holding statistic matches the reference exactly in all four scenarios, as do the baseline total turnover and the baseline and funding annual turnover; the baseline realised wallet is identical to the last digit. Two residuals are explained, not adjusted:
-1. **Recovered funding data:** in the funding scenarios the wallet gap equals the funding-paid gap to ten decimals (the original funding files were deleted; 3,100 of 6,186 funding marks were backfilled).
-2. **Boundary inconsistency in the reference (confirmed by the client):** the published exit-net figures were valued at the 2026-08-25 00:00 mark, one minute inside the sealed period. This report values at the 2026-08-24 23:59 close; corrected baseline exit-net terminal equity **1,946,324.41 USD**. Corrected exit-net equity, ROI and open-position hold time for all four scenarios at full float64 precision: `results/terminal_values_2359.csv`.
+Every cycle count, reset, fee, slippage, drawdown, liquidation-room, MAE, utilisation, ladder-depth and completed-cycle holding statistic matches the reference exactly in all four scenarios, as do the baseline total turnover and the baseline and funding annual turnover; the baseline realised wallet is identical to the last digit. The remaining differences all come from **one boundary inconsistency in the reference (confirmed by the client)**: its runner processed the 2026-08-25 00:00 minute, one minute inside the sealed period, so
+1. the published exit-net figures were valued at that minute's mark, and
+2. in the funding scenarios it charged the 2026-08-25 00:00 funding settlement on the open position. The wallet gap equals the funding-paid gap to ten decimals and is proportional to the final open position (gap / valuation effect = 0.22412669 in all three funding scenarios); the recovered funding inputs reproduce every settlement of the original run. This attribution rests on that evidence: the settlement lies in the sealed period, which was not opened.
+
+ This report values at the 2026-08-24 23:59 close and charges no settlement after the window; corrected baseline exit-net terminal equity **1,946,324.41 USD**. Corrected exit-net equity, ROI and open-position hold time for all four scenarios at full float64 precision: `results/terminal_values_2359.csv`.
 
 ## Phase B: adequacy of the assumptions (key findings)
 Reproducing the model does **not** validate it as a description of exchange execution.
@@ -61,7 +63,7 @@ requirements.txt                   Python 3.12 dependencies
 ```
 
 ## Data retrieval
-`https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-YYYY-MM-DD.zip` (+ `.CHECKSUM`) for 2021-01-01 to 2026-08-24 (2,062 files). `code/downloader.py` takes a manifest CSV with the columns `utc_date`, `archive_url`, `checksum_url`, verifies each archive against its official checksum, extracts it and skips days already extracted.
+`https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-YYYY-MM-DD.zip` (+ `.CHECKSUM`) for 2021-01-01 to 2026-08-24 (2,062 files). `code/downloader.py` takes a manifest CSV with the columns `utc_date`, `archive_url`, `checksum_url`, verifies each archive against its official checksum, extracts it and skips days already extracted. **Use the downloader's output as the engine input:** Binance daily files are inconsistent (some have a header row, some do not); the downloader adds the header where missing, and the runner treats the first line as a header, so a raw headerless file would lose its first trade.
 
 ## Related
 - BTC verification by the same author: https://github.com/ranveer9/blitz-btc-tdca-verification
