@@ -1,0 +1,194 @@
+scenario,field,independent,reference,result
+baseline,ticks_processed,2963456806,2963456806,MATCH
+baseline,liquidated,False,False,MATCH
+baseline,execution_invalid,False,False,MATCH
+baseline,exit_net_return_pct,1359.7469558980301,1359.7200859309103,EXPLAINED (final minute)
+baseline,annualized_exit_net_return_pct,60.778756959379486,60.778232657871634,EXPLAINED (final minute)
+baseline,max_drawdown_pct,50.237311956350496,50.237311956350496,MATCH
+baseline,min_liquidation_room_pct,13.49171433921216,13.49171433921216,MATCH
+baseline,cycles_started,45105,45105,MATCH
+baseline,cycles_completed_tp,45104,45104,MATCH
+baseline,reset_count,28,28,MATCH
+baseline,fees_total,369430.12811965984,369430.12811965984,MATCH
+baseline,funding_paid_signed,0.0,0.0,MATCH
+baseline,slippage_cost,26874.839099998786,26874.839099998786,MATCH
+baseline,final_wallet,1947269.7970803205,1947269.7970803205,MATCH
+baseline,max_step,12,12,MATCH
+baseline,max_hold_days,46.56009303240741,46.56009303240741,MATCH
+baseline,hold_cycles,45105,45105,MATCH
+baseline,hold_days_p50,0.0005617824074074074,0.0005617824074074074,MATCH
+baseline,hold_days_p90,0.053297046296296266,0.053297046296296266,MATCH
+baseline,hold_days_p99,0.8369711606481455,0.8369711606481455,MATCH
+baseline,hold_days_mean,0.045715527605340624,0.04571552765383858,MATCH
+baseline,hold_over_7d,20,20,MATCH
+baseline,hold_over_30d,1,1,MATCH
+baseline,hold_over_90d,0,0,MATCH
+baseline,deep_share_7d,0.1116752510094381,0.111675250890966,MATCH
+baseline,deep_share_30d,0.02258005693610648,0.022580056912152136,MATCH
+baseline,deep_share_90d,0.0,0.0,MATCH
+baseline,open_hold_days,0.3586440625,0.35864625,EXPLAINED (final minute)
+baseline,ended_in_position,True,True,MATCH
+baseline,mae_vs_account_pct.mean,-0.045393097895940836,-0.04539309789594084,MATCH
+baseline,mae_vs_account_pct.median,-0.0021727658507217154,-0.0021727658507217154,MATCH
+baseline,mae_vs_account_pct.p5,-0.13133206624520813,-0.13133206624520813,MATCH
+baseline,mae_vs_account_pct.p1,-0.6875056213525431,-0.6875056213525431,MATCH
+baseline,mae_vs_account_pct.worst,-51.482250299131096,-51.482250299131096,MATCH
+baseline,mae_vs_capital_pct.mean,-2.37156854780243,-2.37156854780243,MATCH
+baseline,mae_vs_capital_pct.median,-0.9679401210172016,-0.9679401210172018,MATCH
+baseline,mae_vs_capital_pct.p5,-10.002498625561548,-10.002498625561548,MATCH
+baseline,mae_vs_capital_pct.p1,-21.230194229824804,-21.2301942298248,MATCH
+baseline,mae_vs_capital_pct.worst,-93.36599321145177,-93.36599321145177,MATCH
+baseline,utilization_pct.mean,0.4771060283712987,0.4771060283712987,MATCH
+baseline,utilization_pct.median,0.17358301085879424,0.17358301085879424,MATCH
+baseline,utilization_pct.p95,1.5217724046415015,1.5217724046415015,MATCH
+baseline,utilization_pct.max,80.44599020425721,80.44599020425721,MATCH
+baseline,ladder_depth_cycles.1-5,44642,44642,MATCH
+baseline,ladder_depth_cycles.6-10,458,458,MATCH
+baseline,ladder_depth_cycles.11-12,4,4,MATCH
+baseline,ladder_depth_sample,45104,45104,MATCH
+baseline,published_final_wallet_usd(exit-net),1946324.4087075205,1946288.5821742606,EXPLAINED (final minute)
+baseline,total_volume_usd(turnover),1459166292.395203,1459166292.395203,MATCH
+funding,ticks_processed,2963456806,2963456806,MATCH
+funding,liquidated,False,False,MATCH
+funding,execution_invalid,False,False,MATCH
+funding,exit_net_return_pct,1301.1971858726076,1301.1673285267984,EXPLAINED (final minute)
+funding,annualized_exit_net_return_pct,59.6171638360339,59.6165612973788,EXPLAINED (final minute)
+funding,max_drawdown_pct,36.23763429410589,36.23763429410589,MATCH
+funding,min_liquidation_room_pct,29.753565893932205,29.753565893932205,MATCH
+funding,cycles_started,45155,45155,MATCH
+funding,cycles_completed_tp,45154,45154,MATCH
+funding,reset_count,27,27,MATCH
+funding,fees_total,359114.91718501615,359114.91718501615,MATCH
+funding,funding_paid_signed,26852.606989832053,26859.89579020009,EXPLAINED (funding data)
+funding,slippage_cost,26154.82269999829,26154.82269999829,MATCH
+funding,final_wallet,1869120.1256251242,1869112.836824756,EXPLAINED (funding data)
+funding,max_step,11,11,MATCH
+funding,max_hold_days,46.579622962962965,46.579622962962965,MATCH
+funding,hold_cycles,45155,45155,MATCH
+funding,hold_days_p50,0.0005537268518518519,0.0005537268518518519,MATCH
+funding,hold_days_p90,0.05364472916666666,0.05364472916666666,MATCH
+funding,hold_days_p99,0.8319400539351844,0.8319400539351844,MATCH
+funding,hold_days_mean,0.045664907987200465,0.04566490803564472,MATCH
+funding,hold_over_7d,19,19,MATCH
+funding,hold_over_30d,1,1,MATCH
+funding,hold_over_90d,0,0,MATCH
+funding,deep_share_7d,0.10560836092072129,0.1056083608086853,MATCH
+funding,deep_share_30d,0.022589528286251673,0.022589528262287283,MATCH
+funding,deep_share_90d,0.0,0.0,MATCH
+funding,open_hold_days,0.3586440625,0.35864625,EXPLAINED (final minute)
+funding,ended_in_position,True,True,MATCH
+funding,mae_vs_account_pct.mean,-0.044908360817388776,-0.044908360817388776,MATCH
+funding,mae_vs_account_pct.median,-0.0021675968428472372,-0.0021675968428472372,MATCH
+funding,mae_vs_account_pct.p5,-0.13026320015647058,-0.13026320015647058,MATCH
+funding,mae_vs_account_pct.p1,-0.6792699181110557,-0.6792699181110557,MATCH
+funding,mae_vs_account_pct.worst,-44.88876744537792,-44.88876744537792,MATCH
+funding,mae_vs_capital_pct.mean,-2.374731020144711,-2.3747310201447114,MATCH
+funding,mae_vs_capital_pct.median,-0.9673943380727529,-0.967394338072753,MATCH
+funding,mae_vs_capital_pct.p5,-9.976594595713166,-9.976594595713168,MATCH
+funding,mae_vs_capital_pct.p1,-21.267769134398296,-21.267769134398296,MATCH
+funding,mae_vs_capital_pct.worst,-92.98556988750228,-92.98556988750228,MATCH
+funding,utilization_pct.mean,0.4767114501641671,0.4767114501641671,MATCH
+funding,utilization_pct.median,0.17357042543978302,0.173570425439783,MATCH
+funding,utilization_pct.p95,1.524790364280285,1.5247903642802847,MATCH
+funding,utilization_pct.max,49.23009035788711,49.23009035788711,MATCH
+funding,ladder_depth_cycles.1-5,44692,44692,MATCH
+funding,ladder_depth_cycles.6-10,459,459,MATCH
+funding,ladder_depth_cycles.11-12,3,3,MATCH
+funding,ladder_depth_sample,45154,45154,MATCH
+funding,published_final_wallet_usd(exit-net),1868258.243839524,1868218.4341446362,EXPLAINED (final minute)
+slip1,ticks_processed,2963456806,2963456806,MATCH
+slip1,liquidated,False,False,MATCH
+slip1,execution_invalid,False,False,MATCH
+slip1,exit_net_return_pct,1143.0930484515002,1143.065762732689,EXPLAINED (final minute)
+slip1,annualized_exit_net_return_pct,56.267835914177766,56.26722826813253,EXPLAINED (final minute)
+slip1,max_drawdown_pct,35.503924645595085,35.503924645595085,MATCH
+slip1,min_liquidation_room_pct,29.95990574954669,29.95990574954669,MATCH
+slip1,cycles_started,44987,44987,MATCH
+slip1,cycles_completed_tp,44986,44986,MATCH
+slip1,reset_count,26,26,MATCH
+slip1,fees_total,329238.85819737223,329238.85819737223,MATCH
+slip1,funding_paid_signed,25283.08215859193,25289.743171214526,EXPLAINED (funding data)
+slip1,slippage_cost,90420.4173000037,90420.4173000037,MATCH
+slip1,final_wallet,1658258.8818440388,1658252.2208314163,EXPLAINED (funding data)
+slip1,max_step,11,11,MATCH
+slip1,max_hold_days,46.56009924768519,46.56009924768519,MATCH
+slip1,hold_cycles,44987,44987,MATCH
+slip1,hold_days_p50,0.0005791550925925926,0.0005791550925925926,MATCH
+slip1,hold_days_p90,0.054162395833333404,0.054162395833333404,MATCH
+slip1,hold_days_p99,0.8440332990740727,0.8440332990740727,MATCH
+slip1,hold_days_mean,0.04583543881272491,0.045835438861350074,MATCH
+slip1,hold_over_7d,19,19,MATCH
+slip1,hold_over_30d,1,1,MATCH
+slip1,hold_over_90d,0,0,MATCH
+slip1,deep_share_7d,0.10612145002713586,0.10612144991455556,MATCH
+slip1,deep_share_30d,0.022580059950304196,0.02258005992634985,MATCH
+slip1,deep_share_90d,0.0,0.0,MATCH
+slip1,open_hold_days,0.35864405092592594,0.3586462384259259,EXPLAINED (final minute)
+slip1,ended_in_position,True,True,MATCH
+slip1,mae_vs_account_pct.mean,-0.045025022976766346,-0.045025022976766346,MATCH
+slip1,mae_vs_account_pct.median,-0.002164794414171003,-0.0021647944141710024,MATCH
+slip1,mae_vs_account_pct.p5,-0.13092539604825665,-0.13092539604825665,MATCH
+slip1,mae_vs_account_pct.p1,-0.6844296882666852,-0.6844296882666852,MATCH
+slip1,mae_vs_account_pct.worst,-45.47681573850685,-45.47681573850685,MATCH
+slip1,mae_vs_capital_pct.mean,-2.3702069116162834,-2.370206911616284,MATCH
+slip1,mae_vs_capital_pct.median,-0.9662872350608578,-0.9662872350608578,MATCH
+slip1,mae_vs_capital_pct.p5,-9.986727289410409,-9.986727289410407,MATCH
+slip1,mae_vs_capital_pct.p1,-21.25360985328645,-21.253609853286445,MATCH
+slip1,mae_vs_capital_pct.worst,-93.22813126196242,-93.22813126196242,MATCH
+slip1,utilization_pct.mean,0.47687010918282324,0.47687010918282324,MATCH
+slip1,utilization_pct.median,0.17352395150934588,0.17352395150934588,MATCH
+slip1,utilization_pct.p95,1.5336464917719068,1.5336464917719068,MATCH
+slip1,utilization_pct.max,49.423012817335014,49.423012817335014,MATCH
+slip1,ladder_depth_cycles.1-5,44522,44522,MATCH
+slip1,ladder_depth_cycles.6-10,461,461,MATCH
+slip1,ladder_depth_cycles.11-12,3,3,MATCH
+slip1,ladder_depth_sample,44986,44986,MATCH
+slip1,published_final_wallet_usd(exit-net),1657453.2542918387,1657416.8734243764,EXPLAINED (final minute)
+slip2,ticks_processed,2963456806,2963456806,MATCH
+slip2,liquidated,False,False,MATCH
+slip2,execution_invalid,False,False,MATCH
+slip2,exit_net_return_pct,1019.8466498244335,1019.8019772598516,EXPLAINED (final minute)
+slip2,annualized_exit_net_return_pct,53.40432934407475,53.40324529866793,EXPLAINED (final minute)
+slip2,max_drawdown_pct,34.92378753020574,34.92378753020574,MATCH
+slip2,min_liquidation_room_pct,31.0349014887024,31.0349014887024,MATCH
+slip2,cycles_started,45024,45024,MATCH
+slip2,cycles_completed_tp,45023,45023,MATCH
+slip2,reset_count,25,25,MATCH
+slip2,fees_total,306832.62783878297,306832.62783878297,MATCH
+slip2,funding_paid_signed,24294.16185580316,24305.067359837034,EXPLAINED (funding data)
+slip2,slippage_cost,144978.41490000146,144978.41490000146,MATCH
+slip2,final_wallet,1493446.9496054118,1493436.044101378,EXPLAINED (funding data)
+slip2,max_step,11,11,MATCH
+slip2,max_hold_days,46.560095625,46.560095625,MATCH
+slip2,hold_cycles,45024,45024,MATCH
+slip2,hold_days_p50,0.0005594155092592593,0.0005594155092592593,MATCH
+slip2,hold_days_p90,0.053321974537037145,0.053321974537037145,MATCH
+slip2,hold_days_p99,0.8476485766203695,0.8476485766203695,MATCH
+slip2,hold_days_mean,0.04579777223649444,0.04579777228507965,MATCH
+slip2,hold_over_7d,20,20,MATCH
+slip2,hold_over_30d,1,1,MATCH
+slip2,hold_over_90d,0,0,MATCH
+slip2,deep_share_7d,0.11221922216555855,0.11221922204650936,MATCH
+slip2,deep_share_30d,0.022580058193425453,0.02258005816947111,MATCH
+slip2,deep_share_90d,0.0,0.0,MATCH
+slip2,open_hold_days,0.3577744212962963,0.3577766087962963,EXPLAINED (final minute)
+slip2,ended_in_position,True,True,MATCH
+slip2,mae_vs_account_pct.mean,-0.04503611695027757,-0.04503611695027757,MATCH
+slip2,mae_vs_account_pct.median,-0.0021534471991656876,-0.002153447199165687,MATCH
+slip2,mae_vs_account_pct.p5,-0.1324861063014462,-0.1324861063014462,MATCH
+slip2,mae_vs_account_pct.p1,-0.683433185210498,-0.683433185210498,MATCH
+slip2,mae_vs_account_pct.worst,-44.71516066404227,-44.71516066404227,MATCH
+slip2,mae_vs_capital_pct.mean,-2.376343130521031,-2.3763431305210316,MATCH
+slip2,mae_vs_capital_pct.median,-0.9657201330263727,-0.9657201330263727,MATCH
+slip2,mae_vs_capital_pct.p5,-9.99309460401044,-9.99309460401044,MATCH
+slip2,mae_vs_capital_pct.p1,-21.22624501004598,-21.226245010045975,MATCH
+slip2,mae_vs_capital_pct.worst,-93.43394617496544,-93.43394617496543,MATCH
+slip2,utilization_pct.mean,0.4769437293544871,0.4769437293544871,MATCH
+slip2,utilization_pct.median,0.1735730227525211,0.1735730227525211,MATCH
+slip2,utilization_pct.p95,1.528909452256192,1.5289094522561917,MATCH
+slip2,utilization_pct.max,48.914411564174884,48.914411564174884,MATCH
+slip2,ladder_depth_cycles.1-5,44561,44561,MATCH
+slip2,ladder_depth_cycles.6-10,459,459,MATCH
+slip2,ladder_depth_cycles.11-12,3,3,MATCH
+slip2,ladder_depth_sample,45023,45023,MATCH
+slip2,published_final_wallet_usd(exit-net),1493125.1336104118,1493065.5703398779,EXPLAINED (final minute)

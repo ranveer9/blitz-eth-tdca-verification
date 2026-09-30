@@ -1,0 +1,122 @@
+{
+  "version": "v1.0.0",
+  "terminal_values_2359_full_precision": {
+    "baseline": {
+      "exit_net_terminal_equity_usd": 1946324.4087075205,
+      "roi_pct": 1359.7469558980301,
+      "annualized_roi_pct": 60.778756959379486,
+      "open_position_hold_days": 0.3586440625,
+      "open_position_hold_ms": 30986847,
+      "open_position_entry_ts_ms": 1787585012964,
+      "open_position_entry_utc": "2026-08-24 15:23:32.964 UTC",
+      "valuation_ts_ms": 1787615999811,
+      "valuation_utc": "2026-08-24 23:59:59.811 UTC",
+      "final_mark_close_2359": 2481.60582171,
+      "realised_wallet_usd": 1947269.7970803205,
+      "published_exit_net_usd": 1946288.5821742606,
+      "published_roi_pct": 1359.7200859309103,
+      "published_annualized_roi_pct": 60.778232657871634,
+      "published_open_hold_days": 0.35864625
+    },
+    "funding": {
+      "exit_net_terminal_equity_usd": 1868258.243839524,
+      "roi_pct": 1301.1971858726076,
+      "annualized_roi_pct": 59.6171638360339,
+      "open_position_hold_days": 0.3586440625,
+      "open_position_hold_ms": 30986847,
+      "open_position_entry_ts_ms": 1787585012964,
+      "open_position_entry_utc": "2026-08-24 15:23:32.964 UTC",
+      "valuation_ts_ms": 1787615999811,
+      "valuation_utc": "2026-08-24 23:59:59.811 UTC",
+      "final_mark_close_2359": 2481.60582171,
+      "realised_wallet_usd": 1869120.1256251242,
+      "published_exit_net_usd": 1868218.4341446362,
+      "published_roi_pct": 1301.1673285267984,
+      "published_annualized_roi_pct": 59.6165612973788,
+      "published_open_hold_days": 0.35864625
+    },
+    "slip1": {
+      "exit_net_terminal_equity_usd": 1657453.2542918387,
+      "roi_pct": 1143.0930484515002,
+      "annualized_roi_pct": 56.267835914177766,
+      "open_position_hold_days": 0.35864405092592594,
+      "open_position_hold_ms": 30986846,
+      "open_position_entry_ts_ms": 1787585012965,
+      "open_position_entry_utc": "2026-08-24 15:23:32.965 UTC",
+      "valuation_ts_ms": 1787615999811,
+      "valuation_utc": "2026-08-24 23:59:59.811 UTC",
+      "final_mark_close_2359": 2481.60582171,
+      "realised_wallet_usd": 1658258.8818440388,
+      "published_exit_net_usd": 1657416.8734243764,
+      "published_roi_pct": 1143.065762732689,
+      "published_annualized_roi_pct": 56.26722826813253,
+      "published_open_hold_days": 0.3586462384259259
+    },
+    "slip2": {
+      "exit_net_terminal_equity_usd": 1493125.1336104118,
+      "roi_pct": 1019.8466498244335,
+      "annualized_roi_pct": 53.40432934407475,
+      "open_position_hold_days": 0.3577744212962963,
+      "open_position_hold_ms": 30911710,
+      "open_position_entry_ts_ms": 1787585088101,
+      "open_position_entry_utc": "2026-08-24 15:24:48.101 UTC",
+      "valuation_ts_ms": 1787615999811,
+      "valuation_utc": "2026-08-24 23:59:59.811 UTC",
+      "final_mark_close_2359": 2481.60582171,
+      "realised_wallet_usd": 1493446.9496054118,
+      "published_exit_net_usd": 1493065.5703398779,
+      "published_roi_pct": 1019.8019772598516,
+      "published_annualized_roi_pct": 53.40324529866793,
+      "published_open_hold_days": 0.3577766087962963
+    }
+  },
+  "repo": "https://github.com/ranveer9/blitz-eth-tdca-verification",
+  "generated_utc": "2026-09-30 10:55 UTC",
+  "trade_count": {
+    "independent": 2963456806,
+    "reference": 2963456806
+  },
+  "field_counts": {
+    "baseline": "45 exact, 4 explained, 0 unexplained",
+    "funding": "42 exact, 6 explained, 0 unexplained",
+    "slip1": "42 exact, 6 explained, 0 unexplained",
+    "slip2": "42 exact, 6 explained, 0 unexplained"
+  },
+  "unexplained_differences": 0,
+  "funding_residual_identity": {
+    "funding": true,
+    "slip1": true,
+    "slip2": true
+  },
+  "final_minute_hold_gap_ms": {
+    "baseline": 189.0,
+    "funding": 189.0,
+    "slip1": 189.0,
+    "slip2": 189.0
+  },
+  "rule_checks": "16/16",
+  "exit_net_terminal_equity": {
+    "baseline": {
+      "this_report": 1946324.4087075205,
+      "published": 1946288.5821742606
+    },
+    "funding": {
+      "this_report": 1868258.243839524,
+      "published": 1868218.4341446362
+    },
+    "slip1": {
+      "this_report": 1657453.2542918387,
+      "published": 1657416.8734243764
+    },
+    "slip2": {
+      "this_report": 1493125.1336104118,
+      "published": 1493065.5703398779
+    }
+  },
+  "sensitivities_vs_reference_rules_pct": {
+    "F1_tick": 1.227243499953734,
+    "F2_vol1x": -41.66095511566482,
+    "F3_vol2x": -45.537005845315235,
+    "L1_lat1s": -59.02229445931939
+  }
+}
